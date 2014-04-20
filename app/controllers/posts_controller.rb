@@ -14,7 +14,7 @@ class PostsController < ApplicationController
       @category_name = @post.category.name
     end
     if @post.blog_id
-      @blog_title = @post.blog.name
+      @blog_name = @post.blog.name
     end
   end
 
