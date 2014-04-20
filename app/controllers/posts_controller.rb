@@ -10,6 +10,12 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    if @post.category_id
+      @category_name = @post.category.name
+    end
+    if @post.blog_id
+      @blog_name = @post.blog.name
+    end
   end
 
   # GET /posts/new
