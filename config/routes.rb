@@ -1,6 +1,4 @@
 Myblog::Application.routes.draw do
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :admin_users
   resources :categories
 
   resources :posts
