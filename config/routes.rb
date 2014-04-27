@@ -1,5 +1,4 @@
 Myblog::Application.routes.draw do
-  mount RailsAdmin::Engine => '/kanri', as: 'rails_admin'
   resources :categories
 
   resources :posts
